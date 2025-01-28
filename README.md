@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+User Management Dashboard
+usermanagementbhargavikotni.netlify.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application designed for managing users. It allows users to view, add, edit, and delete user details in an intuitive and interactive dashboard interface.
 
-## Available Scripts
+Features
+Core Functionalities
+View Users:
 
-In the project directory, you can run:
+Displays a list of users with details such as ID, First Name, Last Name, Email, and Department.
+Integrated with pagination for seamless navigation of large datasets.
+Add Users:
 
-### `npm start`
+Users can add new entries via a modal form.
+Added rows are highlighted with a green blinking effect for better visibility.
+Edit Users:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Edit user details through a pre-filled modal form.
+Edited rows are highlighted with a yellow blinking effect for user feedback.
+Delete Users:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Provides a confirmation prompt before deletion.
+Rows marked for deletion blink in red for brief periods before being removed.
+Additional Features
+Pagination Navigation:
+Includes clickable page numbers for easy navigation.
+Dynamically adapts to the number of pages in the dataset.
+Form Validation:
+Ensures all input fields are filled and email addresses are valid.
+Displays inline error messages or alerts for invalid inputs.
+Animations and Feedback:
+Smooth transitions and row highlighting improve the user experience.
+Hover effects and responsive feedback enhance interactivity.
+Error Handling:
+Gracefully handles API errors and displays user-friendly error messages.
+Responsive Design:
+Fully optimized for desktop and mobile devices.
+Technologies Used
+Frontend:
+- React.js (with Hooks for state management)
+- Axios for API requests
+- CSS3 for styling (including animations and gradients)
+- JSONPlaceholder API for mock backend
+- Lucide React for icons
+Getting Started
+Prerequisites
+Node.js and npm installed on your system.
+Installation
+Clone the repository:
 
-### `npm test`
+bash
+Copy
+Edit
+git clone https://github.com/kotnibhargavi/User-Management-Application-AJACKUS.git
+cd user-management-app
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy
+Edit
+npm install
+Running the Application
+Start the development server:
 
-### `npm run build`
+bash
+Copy
+Edit
+npm start
+The app will be available at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build for production:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy
+Edit
+npm run build
+The build artifacts will be stored in the build/ directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment
+Deploy the app on platforms like Netlify.
 
-### `npm run eject`
+Project Structure
+user-management-app/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   │   ├── Header.js
+│   │   │   └── Header.css
+│   │   ├── UserList/
+│   │   │   ├── UserList.js
+│   │   │   └── UserList.css
+│   │   ├── UserForm/
+│   │   │   ├── UserForm.js
+│   │   │   └── UserForm.css
+│   │   └── Modal/
+│   │       ├── Modal.js
+│   │       └── Modal.css
+│   ├── services/
+│   │   └── api.js
+│   ├── styles/
+│   │   └── global.css
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── README.md
+└── .gitignore
+Future Enhancements
+Real Backend Integration: Replace JSONPlaceholder with a real backend service for persistent data storage.
+Advanced Search and Filter: Add features to search and filter users by various criteria (e.g., name, department).
+Role-Based Access Control: Implement different roles for users (e.g., admin, editor).
+Unit and Integration Testing: Use Jest and Cypress to ensure reliable functionality.
+Dynamic Data Schema: Allow dynamic configuration of columns and fields based on a provided schema.
+Contributing
+Contributions are welcome! To contribute:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fork the repository.
+Create a new branch:
+bash
+Copy
+Edit
+git checkout -b feature-name
+Make your changes and commit:
+bash
+Copy
+Edit
+git commit -m "Description of changes"
+Push to the branch:
+bash
+Copy
+Edit
+git push origin feature-name
+Submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contact
+For questions or feedback, feel free to contact:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Author: Kotni Bhargavi
+Email: kotnibhargavi0103@gmail.com
+GitHub: https://github.com/kotnibhargavi
+LinkedIn: https://www.linkedin.com/in/kotnibhargavi/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
